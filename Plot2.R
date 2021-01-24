@@ -22,6 +22,6 @@ datetime <- paste(as.Date(consumptiondata$Date), consumptiondata$Time)
 consumptiondata$Datetime <- as.POSIXct(datetime)
 
  plot(consumptiondata$Global_active_power ~ consumptiondata$Datetime, type = "l",
-                           ylab = "Global Active Power (kilowatts)", xlab = "Datetime")
+                           ylab = "Global Active Power (kilowatts)", xlab = "")
  dev.copy(png, file = "Plot2.png", height = 480, width = 480)
  dev.off()
